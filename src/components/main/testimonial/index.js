@@ -23,75 +23,75 @@ const Testimonial = () => {
                   <div className="col-9">
                     <div className="rate">
                       <img src={Rate} alt="" />
-                        <img src={Rate} alt="" />
-                          <img src={Rate} alt="" />
-                            <img src={Rate} alt="" />
-                              <img src={Rate} alt="" />
-                              </div>
-                              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit, sed do eiusmod”</p>
-                              <h4>John Dee 32, Bromo</h4>
-                            </div>
-                          </div>
-                        </div>
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
                     </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                      adipiscing
+                      elit, sed do eiusmod”</p>
+                    <h4>John Dee 32, Bromo</h4>
                   </div>
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="card-item">
-                        <div className="card-body">
-                          <div className="col-3">
-                            <img src={ImgTesti2} alt="" />
-                          </div>
-                          <div className="col-9">
-                            <div className="rate">
-                              <img src={Rate} alt="" />
-                                <img src={Rate} alt="" />
-                                  <img src={Rate} alt="" />
-                                    <img src={Rate} alt="" />
-                                      <img src={Rate} alt="" />
-                                      </div>
-                                      <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
-                                        elit, sed do eiusmod”</p>
-                                      <h4>John Dee 32, Bromo</h4>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <div className="row">
-                            <div className="col-lg-12">
-                              <div className="card-item">
-                                <div className="card-body">
-                                  <div className="col-3">
-                                    <img src={ImgTesti2} alt="" />
-                                  </div>
-                                  <div className="col-9">
-                                    <div className="rate">
-                                      <img src={Rate} alt="" />
-                                        <img src={Rate} alt="" />
-                                          <img src={Rate} alt="" />
-                                            <img src={Rate} alt="" />
-                                              <img src={Rate} alt="" />
-                                              </div>
-                                              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit
-                                                amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
-                                                adipiscing
-                                                elit, sed do eiusmod”</p>
-                                              <h4>John Dee 32, Bromo</h4>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </section>
-                            )
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="card-item">
+                <div className="card-body">
+                  <div className="col-3">
+                    <img src={ImgTesti2} alt="" />
+                  </div>
+                  <div className="col-9">
+                    <div className="rate">
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                      adipiscing
+                      elit, sed do eiusmod”</p>
+                    <h4>John Dee 32, Bromo</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="card-item">
+                <div className="card-body">
+                  <div className="col-3">
+                    <img src={ImgTesti2} alt="" />
+                  </div>
+                  <div className="col-9">
+                    <div className="rate">
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                      <img src={Rate} alt="" />
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur
+                      adipiscing
+                      elit, sed do eiusmod”</p>
+                    <h4>John Dee 32, Bromo</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
-                            export default Testimonial;
+export default Testimonial;

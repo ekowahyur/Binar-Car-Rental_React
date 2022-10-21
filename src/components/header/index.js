@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
+import { useLocation } from "react-router-dom";
 import './style.css';
 import Logo from '../../assets/images/logo.svg';
 import Menu from './assets/menu.png';
 import CloseButton from './assets/close.svg';
 
 const Header = () => {
+  const location = useLocation()
+  console.log(location.pathname);
+  const show = location.pathname === '/' ? true : false
+  console.log(show);
+
   const [active, setActive] = useState(false);
 
   const openSidebar = () => {
@@ -19,13 +25,15 @@ const Header = () => {
     <header className="header-nav">
       <div className="container">
         <div className="row">
-          <a href="#hero-section" className="logo">
+          <a href="/" className="logo">
             <img src={Logo} alt="" />
           </a>
+          {show ? (
+          <>
           <div className={`overlay-bg ${active ? 'navbar-active' : ''}`} />
           <div className={`sidebar ${active ? 'navbar-active' : ''}`}>
             <div className="top-sidebar">
-              <a href="#hero-section" className="logo-sidebar">
+              <a href="/" className="logo-sidebar">
                 <img src={Logo} alt="" />
               </a>
               <div className="close-button" onClick={closeSidebar}>
@@ -50,6 +58,8 @@ const Header = () => {
           <div className="burger-icon" onClick={openSidebar}>
             <img src={Menu} alt="" />
           </div>
+          </>
+          ) : null}
         </div>
       </div>
     </header>

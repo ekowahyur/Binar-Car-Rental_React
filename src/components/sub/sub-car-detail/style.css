@@ -1,0 +1,200 @@
+.find-result-border {
+  width: 90%;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 15%);
+  border-radius: 8px;
+  margin: auto;
+  margin-top: -60px;
+  padding: 0 15px;
+}
+
+.find-result-border h3 {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 15px;
+}
+
+.find-result-form {
+  display: flex;
+  padding-left: 0;
+}
+
+.find-result-form .form {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.form-border {
+  padding: 10px;
+}
+
+.form-label {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3C3C3C;
+}
+
+.form-control {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3C3C3C;
+}
+
+.form-select {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3C3C3C;
+}
+
+.car-detail {
+  padding-top: 40px;
+}
+
+.car-detail-border {
+  width: 90%;
+  margin: auto;
+}
+
+.package-desc h3 {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 20px 0 10px 20px;
+}
+
+.package-desc ul {
+  list-style: disc;
+}
+
+.package-desc li {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 175%;
+  color: #8A8A8A;
+  padding-bottom: 15px;
+  margin-left: 30px;
+}
+
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.car-detail img {
+  padding: 50px 30px;
+}
+
+.card-body {
+  padding: 0 20px;
+}
+
+.card-body h5 {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 4px 0 5px;
+  margin: 0;
+}
+
+.card-body ul {
+  display: flex;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  color: #8A8A8A;
+}
+
+.card-body img {
+  padding: 0;
+}
+
+.nominal {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.nominal h4 {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 4px 0;
+}
+
+@media (max-width:991px) {
+  .find-result-border h3 {
+    padding-left: 0px;
+  }
+
+  .find-result-form {
+    display: block;
+  }
+
+  .find-result-form .form {
+    display: block;
+    width: 100%;
+  }
+
+  .mb-3 {
+    margin-bottom: 0 !important;
+  }
+
+  .card-border {
+    width: 100%;
+    margin: 20px 0 24px;
+  }
+}
+
+@media (max-width:767px) {
+  .find-result-border {
+    margin-top: -25px;
+  }
+
+  .package-desc h3 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .package-desc li {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 175%;
+    color: #8A8A8A;
+    padding-right: 15px;
+    text-align: justify;
+  }
+}
