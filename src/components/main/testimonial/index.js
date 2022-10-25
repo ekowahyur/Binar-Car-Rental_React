@@ -1,10 +1,35 @@
 import React from 'react';
+import ReactOwlCarousel from 'react-owl-carousel';
 import ImgTesti1 from './assets/img_testi_1.png';
 import ImgTesti2 from './assets/img_testi_2.png';
 import Rate from './assets/star.svg';
 import './style.css';
+import './owl-carousel/owl.carousel.css'
+import './owl-carousel/owl.theme.default.css'
 
 const Testimonial = () => {
+
+  const options = {
+    center: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplaySpeed: 3000,
+    loop: true,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      }
+    }
+  };
+
   return (
     <section className="testimonial" id="testimonial">
       <div className="container">
@@ -12,7 +37,7 @@ const Testimonial = () => {
           <h3>Testimonial</h3>
           <h4>Berbagai review positif dari para pelanggan kami</h4>
         </div>
-        <div className="owl-carousel">
+        <ReactOwlCarousel className="owl-carousel" {...options}>
           <div className="row">
             <div className="col-lg-12">
               <div className="card-item">
@@ -88,7 +113,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-        </div>
+        </ReactOwlCarousel>
       </div>
     </section>
   )

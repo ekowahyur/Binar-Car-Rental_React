@@ -8,10 +8,10 @@ import {
 import './style.css';
 
 const Faq = () => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState('');
   const toggle = (id) => {
     if (open === id) {
-      setOpen();
+      setOpen('');
     } else {
       setOpen(id);
     }

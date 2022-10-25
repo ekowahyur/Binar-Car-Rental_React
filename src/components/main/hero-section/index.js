@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import HeroThumbnail from './assets/img_car.png';
 import './style.css';
 
@@ -12,7 +13,7 @@ const HeroSection = () => {
             <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
               Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
             {window.location.pathname === '/' &&
-            <a href="/find-car" className="btn btn-primary">Mulai Sewa Mobil</a>
+            <Link to={'/find-car'} className="btn btn-primary">Mulai Sewa Mobil</Link>
             }
           </div>
         </div>

@@ -1,10 +1,10 @@
 import React from 'react';
-import SubCarDetail from '../../components/sub/sub-car-detail';
+import CarDesc from '../../components/sub/car-desc';
 
 const CarDetail = () => {
   return (
     <div className='car-detail'>
-      <SubCarDetail />
+      <CarDesc />
     </div>
   )
 };

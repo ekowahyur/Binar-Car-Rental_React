@@ -22,16 +22,16 @@ const Footer = () => {
           <div className="col-lg-3 col-md-6">
             <ul className="nav-footer">
               <li>
-                <a href="/#our-services">Our Services</a>
+                <a href="">Our Services</a>
               </li>
               <li>
-                <a href="/#why-us">Why Us</a>
+                <a href="">Why Us</a>
               </li>
               <li>
-                <a href="/#testimonial">Testimonial</a>
+                <a href="">Testimonial</a>
               </li>
               <li>
-                <a href="/#faq">FAQ</a>
+                <a href="">FAQ</a>
               </li>
             </ul>
           </div>
