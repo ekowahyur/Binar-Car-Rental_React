@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Axios from 'axios';
 import { currencyFormat } from '../../../helper';
 import UserIcon from './assets/user-icon.svg';
-import placeholderImg from '../../../assets/images/placeholder-img.jpg'
+import placeholderImg from '../../../assets/images/placeholder-img.jpg';
 import './style.css';
 
 const CarDesc = () => {

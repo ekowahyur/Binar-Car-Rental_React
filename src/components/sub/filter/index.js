@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import Select from 'react-select'
+// import Select from 'react-select';
 import './style.css';
 
 
@@ -22,7 +22,32 @@ const Filter = (filterData) => {
       block: 'center',
       inline: 'center'
     })
-  }
+  };
+
+  // const options = [
+  //   { value: 'small', label: 'Chocolate' },
+  //   { value: 'medium', label: 'Strawberry' },
+  //   { value: 'large', label: 'Vanilla' }
+  // ]
+
+  // <option value="small">2 - 4 orang</option>
+  //                     <option value="medium">4 - 6 orang</option>
+  //                     <option value="large">6 - 8 orang</option>
+  
+  // const MyComponent = () => (
+  //   <Select options={options} />
+  // )
+
+  // const customStyles = {
+  //   option: ( {isFocused, isSelected}) => ({
+  //     background: isFocused
+  //         ? 'hsla(291, 64%, 42%, 0.5)'
+  //         : isSelected
+  //             ? 'hsla(291, 64%, 42%, 1)'
+  //             : undefined,
+  //     zIndex: 1
+  // }),
+  // };
 
 
   return (
@@ -35,6 +60,7 @@ const Filter = (filterData) => {
         <div className={`overlay-bg-2 ${active ? 'overlay-active' : ''}`} onClick={overlayDeactive} />
         <div className={`filter-border ${active ? 'overlay-active' : ''}`}>
           <div className="row">
+            {/* <Select options={options} /> */}
             <form className="filter-form" onSubmit={filterData.getData}>
 
               <div className="form">
@@ -86,6 +112,20 @@ const Filter = (filterData) => {
                       <option value="medium"> Rp. 400.000 - Rp. 600.000 </option>
                       <option value="large"> {'> Rp. 600.000'} </option>
                     </select>
+                    {/* <Select
+                    className="harga"
+                    classNamePrefix="select"
+                    placeholder="testing"
+                    menuIsOpen="true"
+                    onFocus={overlayActive}
+                    styles={customStyles}
+                    ref={filterData.priceRange}
+                    onChange={(e)=> filterData.priceRange.current.value = e.value}
+                    options={[
+                      {value:"small", label: '< Rp. 400.000'},
+                      {value:"medium", label: 'Rp. 400.000 - Rp. 600.000'},
+                      {value:"large", label: '> Rp. 600.000'}
+                    ]} /> */}
                   </div>
                 </div>
 
