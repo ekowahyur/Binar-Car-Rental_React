@@ -51,16 +51,6 @@
   border-radius: 8px;
 }
 
-.package-desc.card ul {
-  display: flex;
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 14px;
-  color: #8A8A8A;
-}
-
 .card-detail .card {
   background: #FFFFFF;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
@@ -68,10 +58,12 @@
 }
 
 .card-img {
+  height: 350px;
+  object-fit: cover;
   padding: 50px 25px;
 }
 
-.card-detail .card-body{
+.card-detail .card-body {
   padding: 15px 25px;
 }
 
@@ -86,7 +78,7 @@
   margin: 0;
 }
 
-.card-detail .card-body .category{
+.card-detail .card-body .category {
   display: flex;
   font-family: 'Arial';
   font-style: normal;
@@ -96,7 +88,7 @@
   color: #8A8A8A;
 }
 
-.card-detail .card-body .category p{
+.card-detail .card-body .category p {
   padding-left: 10px;
 }
 
@@ -116,33 +108,63 @@
   padding: 4px 0;
 }
 
+.backButton2{
+  padding-bottom: 10px;
+}
+
+.backButton2 a {
+  background: #5CB85F;
+  border-radius: 20px;
+  border-color: #5CB85F;
+  font-size: 14px;
+}
+
 @media (max-width:991px) {
   .car-desc-border {
     width: 90%;
     margin: auto;
   }
-  .card-detail{
+
+  .card-detail {
     margin-top: 20px;
+  }
+
+  .card-img {
+    padding: 20px 25px 10px;
+  }
+
+  .price {
+    padding: 50px 0 20px;
   }
 }
 
-/* @media (max-width:767px) {
+@media (max-width:767px) {
   .package-desc h3 {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 10px;
+    padding: 20px 0 10px 15px;
   }
 
   .package-desc li {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 175%;
-    color: #8A8A8A;
-    padding-right: 15px;
-    text-align: justify;
+    line-height: 150%;
+    padding: 5px 0px;
+    margin-right: 15px;
   }
-} */
+
+  .card-img {
+    height: 200px;
+    padding: 25px 15px 15px;
+  }
+
+  .card-detail .card-body {
+    padding: 15px 15px;
+  }
+
+  .package-desc .card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding-bottom: 10px;
+  }
+}

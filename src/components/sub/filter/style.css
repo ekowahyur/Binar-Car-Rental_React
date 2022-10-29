@@ -9,8 +9,8 @@
   padding: 0 15px;
 }
 
-.filter-border.findcar-active {
-  z-index: 11;
+.filter-border.overlay-active {
+  z-index: 101;
 }
 
 .filter-form {
@@ -61,7 +61,7 @@
   color: #3C3C3C;
 }
 
-.button a {
+.button button {
   font-family: 'Arial';
   font-style: normal;
   font-weight: 700;
@@ -69,11 +69,12 @@
   line-height: 20px;
   color: #FFFFFF;
   background: #5CB85F;
-  border-radius: 2px;
+  border-radius: 5px;
   border-color: #5CB85F;
+  
 }
 
-/* .overlay-bg-2 {
+.overlay-bg-2 {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -85,12 +86,16 @@
     bottom: 0;
   }
   
-  .overlay-bg-2.findcar-active {
+  .overlay-bg-2.overlay-active {
     display: block;
-    z-index: 10;
-  } */
+    z-index: 100;
+  }
 
 @media (max-width:991px) {
+  .filter-border {
+    padding-bottom: 5px;
+  }
+
   .filter-form {
     display: block;
   }
@@ -111,6 +116,7 @@
 
 @media (max-width:767px) {
   .filter-border {
-    margin-top: -25px;
+    width: 100%;
+    margin-top: -70px;
   }
 }

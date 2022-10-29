@@ -12,14 +12,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-8">
             <div className="address">
               <h4>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</h4>
               <h4>binarcarrental@gmail.com</h4>
               <h4>081-233-334-808</h4>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-3 col-md-4">
             <ul className="nav-footer">
               <li>
                 <a href="">Our Services</a>
@@ -35,7 +35,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-8">
             <div className="info-binar">
               <h4>Connect with us</h4>
               <a href="https://www.facebook.com/binaracademy/" target="_blank">
@@ -55,7 +55,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="col-lg-2 col-md-6">
+          <div className="col-lg-2 col-md-4">
             <div className="copyright">
               <h4>&copy; Copyright Binar 2022</h4>
               <img src={Logo} alt="" />

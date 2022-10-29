@@ -2,7 +2,7 @@
   "cars": [
     {
       "name": "Mazda 3",
-      "category": 6,
+      "category": "medium",
       "price": 4000,
       "status": true,
       "start_rent_at": "2040-07-03T03:00:07.069Z",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Ford Impala",
-      "category": 6,
+      "category": "medium",
       "price": 400,
       "status": false,
       "start_rent_at": "2035-05-20T06:54:47.116Z",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Rolls Royce Element",
-      "category": 8,
+      "category": "large",
       "price": 84274,
       "status": false,
       "start_rent_at": "2064-03-12T05:45:51.248Z",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Nissan V90",
-      "category": 4,
+      "category": "small",
       "price": 7290,
       "status": true,
       "start_rent_at": "2040-07-03T03:00:07.069Z",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Honda Civic",
-      "category": 4,
+      "category": "small",
       "price": 7290000,
       "status": false,
       "start_rent_at": "2040-07-03T03:00:07.069Z",

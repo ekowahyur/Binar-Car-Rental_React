@@ -1,19 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Axios from 'axios';
+import { currencyFormat } from '../../../helper';
 import UserIcon from './assets/user-icon.svg';
+import placeholderImg from '../../../assets/images/placeholder-img.jpg'
 import './style.css';
 
 const CarDesc = () => {
   const [detail, setDetail] = useState({});
   let { id } = useParams();
 
-  const baseUrl = 'http://localhost:4000';
+  // const baseUrl = 'http://localhost:4000';
+  const baseUrl = 'https://bootcamp-rent-cars.herokuapp.com/customer';
 
   const fetch = useRef(true);
 
   const getDetail = (id) => {
-    Axios.get(`${baseUrl}/cars/${id}`)
+    Axios.get(`${baseUrl}/car/${id}`)
       .then((response) => {
         setDetail(response.data)
       })
@@ -73,16 +76,32 @@ const CarDesc = () => {
               <div className="col-lg-5 col-md-12">
                 <div className="card-detail">
                   <div className="card">
-                    <img src={detail.image} className="card-img" alt="..." />
+                    <img
+                      src={detail.image !== null ? detail.image : placeholderImg}
+                      className="card-img"
+                      alt="..."
+                    />
                     <div className="card-body">
                       <h5 className="card-title">{detail.name}</h5>
                       <div className="category">
                         <img src={UserIcon} alt="" />
-                        <p>6 - 8 orang</p>
+                        <p>{(() => {
+                          switch (detail.category) {
+                            case "small": return "2-4 orang";
+                            case "medium": return "4-6 orang";
+                            case "large": return "6-8 orang";
+                            default: return "-"
+                          }
+                        })()}</p>
                       </div>
                       <div className="price">
                         <h4>Total</h4>
-                        <h4>Rp {detail.price}</h4>
+                        <h4>Rp {currencyFormat(detail.price)}</h4>
+                      </div>
+                      <div className="backButton2">
+                        <Link to={`/find-car`} className="btn btn-primary">
+                          KEMBALI
+                        </Link>
                       </div>
                     </div>
                   </div>

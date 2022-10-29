@@ -6,17 +6,12 @@ import Menu from './assets/menu.png';
 import CloseButton from './assets/close.svg';
 
 const Header = () => {
-  const location = useLocation()
-  // console.log(location.pathname);
-  const show = location.pathname === '/' ? true : false
-  // console.log(show);
-
+  const location = useLocation();
+  const show = location.pathname === '/' ? true : false;
   const [active, setActive] = useState(false);
-
   const openSidebar = () => {
     setActive(true);
   };
-
   const closeSidebar = () => {
     setActive(false);
   };
@@ -29,36 +24,36 @@ const Header = () => {
             <img src={Logo} alt="" />
           </a>
           {show ? (
-          <>
-          <div className={`overlay-bg ${active ? 'navbar-active' : ''}`} />
-          <div className={`sidebar ${active ? 'navbar-active' : ''}`}>
-            <div className="top-sidebar">
-              <Link to={"/"} className="logo-sidebar">
-                <img src={Logo} alt="" />
-              </Link>
-              <div className="close-button" onClick={closeSidebar}>
-                <img className="" src={CloseButton} alt="" />
+            <>
+              <div className={`overlay-bg ${active ? 'navbar-active' : ''}`} />
+              <div className={`sidebar ${active ? 'navbar-active' : ''}`}>
+                <div className="top-sidebar">
+                  <Link to={"/"} className="logo-sidebar">
+                    <img src={Logo} alt="" />
+                  </Link>
+                  <div className="close-button" onClick={closeSidebar}>
+                    <img className="" src={CloseButton} alt="" />
+                  </div>
+                </div>
+                <ul className="navbar">
+                  <li>
+                    <a href='#our-services'>Our Services</a>
+                  </li>
+                  <li>
+                    <a href='#why-us'>Why Us</a>
+                  </li>
+                  <li>
+                    <a href='#testimonial'>Testimonial</a>
+                  </li>
+                  <li>
+                    <a href='#faq'>FAQ</a>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <ul className="navbar">
-              <li>
-                <a href='#our-services'>Our Services</a>
-              </li>
-              <li>
-                <a href='#why-us'>Why Us</a>
-              </li>
-              <li>
-                <a href='#testimonial'>Testimonial</a>
-              </li>
-              <li>
-                <a href='#faq'>FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div className="burger-icon" onClick={openSidebar}>
-            <img src={Menu} alt="" />
-          </div>
-          </>
+              <div className="burger-icon" onClick={openSidebar}>
+                <img src={Menu} alt="" />
+              </div>
+            </>
           ) : null}
         </div>
       </div>
