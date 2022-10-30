@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Axios from 'axios';
 import { currencyFormat } from '../../../helper';
 import UserIcon from './assets/user-icon.svg';
-import placeholderImg from '../../../assets/images/placeholder-img.jpg';
+import placeholderImg from '../../../assets/images/placeholder-img.webp';
 import './style.css';
 
 const CarDesc = () => {
@@ -33,7 +33,7 @@ const CarDesc = () => {
   return (
     <section>
       <div className="backButton">
-        <Link to={`/find-car`} className="btn btn-primary">
+        <Link to={`/find-car`} className="btn">
           KEMBALI KE PENCARIAN MOBIL
         </Link>
       </div>
@@ -99,7 +99,7 @@ const CarDesc = () => {
                         <h4>Rp {currencyFormat(detail.price)}</h4>
                       </div>
                       <div className="backButton2">
-                        <Link to={`/find-car`} className="btn btn-primary">
+                        <Link to={`/find-car`} className="btn">
                           KEMBALI
                         </Link>
                       </div>

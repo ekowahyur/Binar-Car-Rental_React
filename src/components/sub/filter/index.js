@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react';
-// import Select from 'react-select';
+import Select from 'react-select';
 import './style.css';
 
 
 const Filter = (filterData) => {
   const [active, setActive] = useState(false);
+
   const overlayActive = () => {
     document.body.style.overflow = "hidden";
     setActive(true);
@@ -24,31 +25,6 @@ const Filter = (filterData) => {
     })
   };
 
-  // const options = [
-  //   { value: 'small', label: 'Chocolate' },
-  //   { value: 'medium', label: 'Strawberry' },
-  //   { value: 'large', label: 'Vanilla' }
-  // ]
-
-  // <option value="small">2 - 4 orang</option>
-  //                     <option value="medium">4 - 6 orang</option>
-  //                     <option value="large">6 - 8 orang</option>
-  
-  // const MyComponent = () => (
-  //   <Select options={options} />
-  // )
-
-  // const customStyles = {
-  //   option: ( {isFocused, isSelected}) => ({
-  //     background: isFocused
-  //         ? 'hsla(291, 64%, 42%, 0.5)'
-  //         : isSelected
-  //             ? 'hsla(291, 64%, 42%, 1)'
-  //             : undefined,
-  //     zIndex: 1
-  // }),
-  // };
-
 
   return (
     <section
@@ -60,7 +36,6 @@ const Filter = (filterData) => {
         <div className={`overlay-bg-2 ${active ? 'overlay-active' : ''}`} onClick={overlayDeactive} />
         <div className={`filter-border ${active ? 'overlay-active' : ''}`}>
           <div className="row">
-            {/* <Select options={options} /> */}
             <form className="filter-form" onSubmit={filterData.getData}>
 
               <div className="form">
@@ -74,7 +49,8 @@ const Filter = (filterData) => {
                         onClick={overlayActive}
                         className="form-control"
                         placeholder="Ketik nama/tipe mobil"
-                        ref={filterData.carName} />
+                        ref={filterData.carName}
+                      />
                     </div>
                   </div>
                 </div>
@@ -82,7 +58,7 @@ const Filter = (filterData) => {
                 <div className="col-lg-3">
                   <div className="form-border">
                     <label className="form-label">Kategori</label>
-                    <select
+                    {/* <select
                       className="form-select"
                       onClick={overlayActive}
                       ref={filterData.category}
@@ -93,14 +69,26 @@ const Filter = (filterData) => {
                       <option value="small">2 - 4 orang</option>
                       <option value="medium">4 - 6 orang</option>
                       <option value="large">6 - 8 orang</option>
-                    </select>
+                    </select> */}
+                    <Select
+                      className="select-form"
+                      classNamePrefix="select"
+                      placeholder="Masukan Kapasitas Mobil"
+                      onFocus={overlayActive}
+                      ref={filterData.category}
+                      onChange={(e) => filterData.category.current.value = e.value}
+                      options={[
+                        { value: "small", label: '2 - 4 orang' },
+                        { value: "medium", label: '4 - 6 orang' },
+                        { value: "large", label: '6 - 8 orang' }
+                      ]} />
                   </div>
                 </div>
 
                 <div className="col-lg-3">
                   <div className="form-border">
                     <label className="form-label">Harga</label>
-                    <select
+                    {/* <select
                       className="form-select"
                       onClick={overlayActive}
                       ref={filterData.priceRange}
@@ -111,28 +99,26 @@ const Filter = (filterData) => {
                       <option value="small"> {'< Rp. 400.000'} </option>
                       <option value="medium"> Rp. 400.000 - Rp. 600.000 </option>
                       <option value="large"> {'> Rp. 600.000'} </option>
-                    </select>
-                    {/* <Select
-                    className="harga"
-                    classNamePrefix="select"
-                    placeholder="testing"
-                    menuIsOpen="true"
-                    onFocus={overlayActive}
-                    styles={customStyles}
-                    ref={filterData.priceRange}
-                    onChange={(e)=> filterData.priceRange.current.value = e.value}
-                    options={[
-                      {value:"small", label: '< Rp. 400.000'},
-                      {value:"medium", label: 'Rp. 400.000 - Rp. 600.000'},
-                      {value:"large", label: '> Rp. 600.000'}
-                    ]} /> */}
+                    </select> */}
+                    <Select
+                      className="select-form"
+                      classNamePrefix="select"
+                      placeholder="Masukan Harga Sewa per Hari"
+                      onFocus={overlayActive}
+                      ref={filterData.priceRange}
+                      onChange={(e) => filterData.priceRange.current.value = e.value}
+                      options={[
+                        { value: "small", label: '< Rp. 400.000' },
+                        { value: "medium", label: 'Rp. 400.000 - Rp. 600.000' },
+                        { value: "large", label: '> Rp. 600.000' }
+                      ]} />
                   </div>
                 </div>
 
                 <div className="col-lg-3">
                   <div className="form-border">
                     <label className="form-label">Status</label>
-                    <select
+                    {/* <select
                       className="form-select"
                       onClick={overlayActive}
                       ref={filterData.statusOrder}
@@ -140,7 +126,18 @@ const Filter = (filterData) => {
                       <option />
                       <option value="true">Tersedia</option>
                       <option value="false">Disewa</option>
-                    </select>
+                    </select> */}
+                    <Select
+                      className="select-form"
+                      classNamePrefix="select"
+                      placeholder=""
+                      onFocus={overlayActive}
+                      ref={filterData.statusOrder}
+                      onChange={(e) => filterData.statusOrder.current.value = e.value}
+                      options={[
+                        { value: "false", label: 'Disewa' },
+                        { value: "true", label: 'Tersedia' }
+                      ]} />
                   </div>
                 </div>
               </div>
@@ -148,7 +145,7 @@ const Filter = (filterData) => {
               <div className="submit">
                 <div className="button">
                   <button
-                    className="btn btn-primary"
+                    className="btn"
                     type="submit"
                     onClick={overlayDeactive}
                   >

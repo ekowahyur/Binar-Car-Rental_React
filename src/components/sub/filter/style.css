@@ -50,9 +50,27 @@
   font-size: 12px;
   line-height: 18px;
   color: #3C3C3C;
+  height: 38px;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #5CB85F;
+  outline: 0;
+  box-shadow: 0 0 0 1px #5CB85F;
 }
 
 .form-select {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3C3C3C;
+}
+
+.select-form {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 300;
@@ -71,25 +89,32 @@
   background: #5CB85F;
   border-radius: 5px;
   border-color: #5CB85F;
-  
+  padding-top: 9px;
+  padding-bottom: 8px;
+}
+
+.button.btn:focus {
+  color: #212529;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #C9E7CA;
 }
 
 .overlay-bg-2 {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .overlay-bg-2.overlay-active {
-    display: block;
-    z-index: 100;
-  }
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay-bg-2.overlay-active {
+  display: block;
+  z-index: 100;
+}
 
 @media (max-width:991px) {
   .filter-border {
@@ -121,10 +146,35 @@
   }
 }
 
-/* .harga .select__menu-list .select__option .select__focus--is-focused{
-  background-color: red !important;
+/* styling react select (form)*/
+.form-select:focus {
+  border-color: #5CB85F;
+  outline: 0;
+  box-shadow: 0 0 0 1px #5CB85F;
 }
 
-.select__indicator-separator{
+.select__indicator-separator {
   display: none;
-} */
+}
+
+.css-1pahdxg-control {
+  border-color: #5CB85F !important;
+  box-shadow: 0 0 0 1px #5CB85F !important;
+}
+
+.css-1pahdxg-control:hover {
+  border-color: #5CB85F !important;
+  box-shadow: 0 0 0 1px #5CB85F !important;
+}
+
+.css-9gakcf-option {
+  background-color: #C9E7CA !important;
+  color: #5CB85F !important;
+  font-weight: 700;
+}
+
+.css-1n7v3ny-option {
+  background-color: #C9E7CA !important;
+  color: #5CB85F !important;
+  font-weight: 700;
+}

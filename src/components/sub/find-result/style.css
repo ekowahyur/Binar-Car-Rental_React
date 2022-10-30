@@ -71,6 +71,22 @@
   order: 1;
   flex-grow: 1;
   margin: 20px 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.car-choice-border .btn:hover {
+  color: #212529 !important;
+}
+
+.car-choice-border .btn:focus {
+  color: #212529 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #C9E7CA;
 }
 
 .car-choice .noData {

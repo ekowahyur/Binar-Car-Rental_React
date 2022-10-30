@@ -13,7 +13,7 @@ const HeroSection = () => {
             <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
               Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
             {window.location.pathname === '/' &&
-            <Link to={'/find-car'} className="btn btn-primary">Mulai Sewa Mobil</Link>
+            <Link to={'/find-car'} className="btn">Mulai Sewa Mobil</Link>
             }
           </div>
         </div>

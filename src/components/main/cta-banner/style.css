@@ -35,6 +35,12 @@
   margin: 52px 0 64px;
 }
 
+.cta-banner.btn:focus {
+  color: #212529;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem #C9E7CA;
+}
+
 @media (max-width:991px) {
   .cta-banner {
     padding-left: 15px;

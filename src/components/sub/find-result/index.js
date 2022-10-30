@@ -5,7 +5,7 @@ import { RotatingLines } from 'react-loader-spinner';
 import { queryData, currencyFormat } from '../../../helper';
 import Filter from '../filter';
 import noCar from './assets/no-car.webp'
-import placeholderImg from '../../../assets/images/placeholder-img.jpg'
+import placeholderImg from '../../../assets/images/placeholder-img.webp'
 import './style.css';
 
 const FindResult = () => {
@@ -125,7 +125,7 @@ const FindResult = () => {
                               <h4 className='price'>Rp {currencyFormat(car.price)} / hari</h4>
                               <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. </p>
-                              <Link className="btn btn-primary" to={`/find-car/${car.id}`} >
+                              <Link className="btn" to={`/find-car/${car.id}`} >
                                 Pilih Mobil
                               </Link>
                             </div>
