@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgServices from './assets/img_service.png';
+import ImgServices from './assets/img_service.webp';
 import CheckIcon from './assets/check-icon.svg';
 import './style.css';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HeroThumbnail from './assets/img_car.png';
+import HeroThumbnail from './assets/img_car.webp';
 import './style.css';
 
 const HeroSection = () => {

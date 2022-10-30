@@ -4,7 +4,7 @@ import Axios from 'axios';
 import { RotatingLines } from 'react-loader-spinner';
 import { queryData, currencyFormat } from '../../../helper';
 import Filter from '../filter';
-import noCar from './assets/no-car.png'
+import noCar from './assets/no-car.webp'
 import placeholderImg from '../../../assets/images/placeholder-img.jpg'
 import './style.css';
 

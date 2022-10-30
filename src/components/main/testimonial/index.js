@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactOwlCarousel from 'react-owl-carousel';
-import ImgTesti1 from './assets/img_testi_1.png';
-import ImgTesti2 from './assets/img_testi_2.png';
+import ImgTesti1 from './assets/img_testi_1.webp';
+import ImgTesti2 from './assets/img_testi_2.webp';
 import Rate from './assets/star.svg';
 import './style.css';
 import './owl-carousel/owl.carousel.css'
